@@ -3588,7 +3588,7 @@
     "shallowequal" "^1.1.0"
     "supports-color" "^5.5.0"
 
-"styled-jsx@5.0.4":
+"styled-jsx@^5.0.4", "styled-jsx@5.0.4":
   "integrity" "sha512-sDFWLbg4zR+UkNzfk5lPilyIgtpddfxXEULxhujorr5jtePTUqiPDc5BC0v1NRqTr/WaFBGQQUoYToGlF4B2KQ=="
   "resolved" "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.0.4.tgz"
   "version" "5.0.4"

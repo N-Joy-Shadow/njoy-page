@@ -18,11 +18,11 @@ export default function MainLayout({ children, title, describe }: MainLayoutProp
             <meta name="description" content={describe ?? "안녕"} />
             <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div>
+        <div className="w-full">
             <Navbar />
-            <div className="flex flex-row">
+            <div className="m-4 flex flex-row h-full">
                 <Aside />
-                <main className="w-full m-4">{children}</main>
+                <main className="flex-grow m-2">{children}</main>
             </div>
             <Footer />
         </div>
