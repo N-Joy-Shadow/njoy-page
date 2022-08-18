@@ -8,9 +8,5 @@ export interface TestStoreProps {
 
 export const useTestStore = create<TestStoreProps>((set) =>({
     value : 0,
-    inc : (v) => set((state) => {
-        const initV = 1; 
-        const r = initV + v
-        return ({ value : r})
-    })
+    inc : (v) => set((state) => ({ value : v}))
 }))

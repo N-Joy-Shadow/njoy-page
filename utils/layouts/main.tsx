@@ -1,3 +1,4 @@
+import { width } from "@mui/system";
 import Head from "next/head";
 import { ReactElement, ReactNode } from "react";
 import Aside from "../components/Aside";
@@ -18,10 +19,12 @@ export default function MainLayout({ children, title, describe }: MainLayoutProp
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <div>
-            <Navbar/>
-            <Aside/>
-            <main>{children}</main>
-            <Footer/>
+            <Navbar />
+            <div className="flex flex-row">
+                <Aside />
+                <main className="w-full m-4">{children}</main>
+            </div>
+            <Footer />
         </div>
 
     </>)
