@@ -8,7 +8,6 @@ export default function SerachBar() {
         <Button variant="contained">
             <div>
                 <p>검색</p>
-  
             </div>
         </Button>
     </div>)

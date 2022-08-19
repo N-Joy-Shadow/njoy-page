@@ -24,8 +24,8 @@ export default function MainLayout({ children, title, describe }: MainLayoutProp
                 <Aside />
                 <main className="flex-grow m-2">{children}</main>
             </div>
-            <Footer />
         </div>
 
     </>)
+//<Footer />
 }
