@@ -15,30 +15,34 @@ export default function Tag(props: TagProps) {
             TagChange(pushTags(TagList,props.tag ?? "none"))
         }
         else{
+            console.log(TagList)
             TagChange(removeTags(TagList,props.tag ?? "none"))
         }
     }
 
 
 
-    return (<div className="rounded-lg outline outline-2 outline-cyan-400 bg-cyan-200 px-2 py-1 w-auto h-auto shadow-xl
+    return (<div className="rounded-lg outline outline-2 outline-cyan-500 bg-cyan-300 px-2 py-1 w-auto h-auto shadow-xl
                     flex flex-row tag-container select-none"
                     onClick={handleOnClick}>
         <p className="text-center text-white select-none">#{props.tag ?? "None"}</p>
-        <p className="w-auto h-auto text-center rounded-full hidden text-white
+        <p className="w-auto h-auto text-center rounded-full text-white
         tag select-none
         ">{isSelected ? "-": "+"}</p>
-        <style jsx>{
-            `
+        <style jsx>{`
                 .tag-container > .tag{
-                    transition : all, 1s;
+                    width : 0;
+                    visibility: collapse;
+                    transition : all, 0.3s;
+                    opacity: 0;
                 }
                 .tag-container:hover > .tag {
-                display : block ;
-                margin-left : 0.5rem;
+                    visibility: visible;
+                    margin-left : 0.5rem;
+                    margin-right : 0.5rem;
+                    opacity: 1.0;
                 }
-            `
-        }
+            `}
         </style>
     </div>)
 }

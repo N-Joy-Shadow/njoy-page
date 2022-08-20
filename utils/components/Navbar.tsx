@@ -8,12 +8,7 @@ export default function Navbar() {
 
             <div className="">
                 <p className=" text-xl text-white text-center align-middle">NJoyShadow</p>
-
             </div>
-            <div className="w-80">
-                <SearchBar />
-            </div>
-
         </nav>
     )
 }

@@ -7,13 +7,7 @@ export default function index() {
 
     return (<Bloglist>
         <div className="w-full bg-cyan-100 rounded-xl shadow-xl p-4 divide-y-2">
-            <TagSelectedList/>
-            <div>
 
-                <BlogItem />
-                <BlogItem />
-                <BlogItem />
-            </div>
         </div>
     </Bloglist>)
 }
